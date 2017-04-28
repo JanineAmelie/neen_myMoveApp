@@ -68,7 +68,7 @@ function displayLocationInputted() {
 
 function getNytData() {
     var query = city + '+' + country;
-    var nytURL = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=?' + query + '&sort=newest&api-key=92752e840dc9412385a1415e5f085ccf';
+    var nytURL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=?' + query + '&sort=newest&api-key=92752e840dc9412385a1415e5f085ccf';
     //function(data) is the callback function will only execute once the data has arrived. 200
     $.getJSON(nytURL, function(data) {
         nytData = data;

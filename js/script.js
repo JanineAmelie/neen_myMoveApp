@@ -145,9 +145,11 @@ function getWikiData() {
 
 }
 
+
 function getStreetViewData() {
+    var myKey = '&key=AIzaSyCnf2MwDkiBzMpQMN3S5EFe3JnRiKzvDDc';
     var urlstr = address.replace(/\s+/g, '');
-    imageUrl = 'https://maps.googleapis.com/maps/api/streetview?size=640x400&location=' + urlstr;
+    imageUrl = 'https://maps.googleapis.com/maps/api/streetview?size=640x400&location='+urlstr + myKey ;
 
     $.ajax({
         url: imageUrl,

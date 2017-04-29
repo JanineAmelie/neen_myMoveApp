@@ -88,7 +88,7 @@ function getNytData() {
             var nyt_artURL = nytData[i].web_url;
 
             tempArtHTML = tempArtHTML.replace('%nytDate%', nyt_artDate);
-            tempArtHTML = tempArtHTML.replace('%nytArtURL', nyt_artURL);
+            tempArtHTML = tempArtHTML.replace('%nytArtURL%', nyt_artURL);
             tempArtHTML = tempArtHTML.replace('%nytArtHEADLINE%', nyt_artHeadline);
             tempArtHTML = tempArtHTML.replace('%nytArtSNIPPET%', nyt_artSnippet);
 
